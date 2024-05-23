@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: frontend-service
+    command: "npm run dev"
+    ports:
+      - "5000:5173"  
+    volumes:
+      - .:/app      
+  
